@@ -7,7 +7,7 @@ My solutions of <strong>coding challenge</strong> . Below are the details of the
  <a href="https://asciinema.org/a/EBGQhLscMWUsY5EysiMYRethT">Watch demonstration of Reverse Proxy Set up</a>
  
  
- ![alt aem-devops](https://raw.githubusercontent.com/saikiranrallabandi/AEM-coding-challenge./master/github_assets/aem-devops.png)
+ ![alt aem-devops](https://raw.githubusercontent.com/saikiranrallabandi/AEM-coding-challenge/master/github_assets/aem-devops.png)
  
  </p>
  <p>
@@ -15,7 +15,7 @@ My solutions of <strong>coding challenge</strong> . Below are the details of the
 <hr>
 <b>MarqueeL</b>
 
-![alt MarqueeL](https://raw.githubusercontent.com/saikiranrallabandi/AEM-coding-challenge./master/github_assets/MarqueeL.png)
+![alt MarqueeL](https://raw.githubusercontent.com/saikiranrallabandi/AEM-coding-challenge/master/github_assets/MarqueeL.png)
 
 1. aem-components/MarqueeL.html
 
@@ -23,7 +23,7 @@ My solutions of <strong>coding challenge</strong> . Below are the details of the
 <br>
 <b>Product_Combinator</b>
 
- ![Product_Combinator](https://raw.githubusercontent.com/saikiranrallabandi/AEM-coding-challenge./master/github_assets/Product_Combinator.png)
+ ![Product_Combinator](https://raw.githubusercontent.com/saikiranrallabandi/AEM-coding-challenge/master/github_assets/Product_Combinator.png)
 
 2. aem-components/Product_Combinator.html[Note: newrelic.png image was build by combining all the images in one html as newrelic.html and export as newrelic.png]
 
