@@ -1,0 +1,159 @@
+</html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+body, html {
+    height: 77%;
+    margin: 0;
+}
+
+.component-2 {
+	position: relative;
+}
+
+.component-2:after { 
+	background: #000;
+	z-index: 1;
+	content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;	
+}
+
+.bg {
+    /* This image used by combining all the images in one html as newrelic.html and taken a screen shot and included as newrelic.png*/
+    background-image: url("assets/newrelic.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+  	display: flex;
+  	top: 0px;
+  	position: absolute;
+  	top: 40%;
+  	width: 100%;
+  	color: white;
+  	opacity: 1;
+  	z-index: 2;
+  	font-family:inherit;
+}
+
+.component-2 .overlay .text-left {
+    display: flex;
+    flex: 0 0 50%;
+  	font-size: 30px;
+}
+
+.component-2 .overlay .text-right {
+    flex: 0 0 50%;
+  	font-size: 25px;    
+}
+
+
+.component-2 .overlay .text-left .text {
+	max-width: 50%;
+	margin: auto;
+}
+
+.component-2 .headingImg { 
+	padding-bottom: 30px;
+}
+
+.component-2 .headingImg span {
+	padding-right: 20px;
+}
+
+.component-2 .headingImg span.active img { 
+    border-bottom-style: solid;
+    border-bottom-color: rgb(10, 176, 191);
+}
+
+.component-2 .headingImg span img {
+	padding-bottom: 20px;
+	height: 30px;
+}
+
+.hidden{
+  	display: none;
+}
+
+.component-2 #textSpinner #tabContent {
+  	display: block;
+}
+
+</style>
+</head>
+
+<body>
+	<div class="component-2">
+		<div class="bg"></div>
+
+		<div class="overlay">
+			<div class="text-left">
+				<span class="text">See how New Relic Synthetics works with our other products</span>
+			</div>
+		
+			<div id="textSpinner" class="text-right white">
+				<div class="headingImg">
+			    	<span class="active"><img src="https://newrelic.com/content/dam/component-assets/c07-product-modules/logo_apm_white.svg" class="nav"></span>
+			    	<span><img src="https://newrelic.com/content/dam/component-assets/c07-product-modules/logo_browser_white.svg" class="nav"></span>
+				    <span><img src="https://newrelic.com/content/dam/component-assets/c07-product-modules/logo_infrastructure_White.svg" class="nav"></span>
+				    <span><img src="https://newrelic.com/content/dam/component-assets/c07-product-modules/logo_mobile_white.svg" class="nav"></span>
+				</div>
+				<div id="tabContent">
+					<span class="active">New Relic Synthetics + New Relic APM</span>
+					<span class="hidden">New Relic Synthetics + New Relic Browser</span>
+					<span class="hidden">New Relic Synthetics + New Relic Infrastructure</span>
+					<span class="hidden">New Relic Synthetics + New Relic Mobile</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script>
+// function showTabContent(idx){
+//   console.log(idx);
+//
+// }
+
+  // var lis = document.getElementById('headerId').getElementsByTagName('span');
+  // console.log(lis);
+  // for (var i = 0, len = lis.length; i < len; i++){
+  //   lis[i].onclick = showTabContent(idx); // inside the function 'this' will refer to the node.
+  // }
+
+
+	$(document).ready(function() {
+		if ($(".component-2 #textSpinner").length > 0) {
+			setComponentText();
+		}	
+	}); 
+	function setComponentText() {
+		var $textSpinnerHeader = $(".component-2 #textSpinner .headingImg"); 
+		var activElemIndex = $textSpinnerHeader.find(".active").index() + 1;
+		if (activElemIndex == 4){
+			activElemIndex = 0; 
+		}
+		$textSpinnerHeader.find("span").removeClass("active"); 
+		$(".component-2 #textSpinner #tabContent span").removeClass("active").addClass("hidden"); 
+		$textSpinnerHeader.find("span").removeClass("active"); 
+		$($textSpinnerHeader.find("span").get(activElemIndex)).addClass("active"); 
+		$($(".component-2 #textSpinner #tabContent span").get(activElemIndex)).addClass("active").removeClass("hidden"); 
+		setTimeout(function() {
+			setComponentText(); 
+		},1000)
+	}
+</script>
+
+</body>
+</html>

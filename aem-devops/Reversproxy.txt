@@ -1,0 +1,70 @@
+ProxyPreserveHost off
+This allows or prevents Apache httpd from functioning as a forward proxy server
+
+
+ProxyRequests off
+This allows or prevents Apache httpd from functioning as a forward proxy server
+
+SSLProxyEngine on
+This directive toggles the usage of the SSL/TLS Protocol Engine for proxy.
+
+ProxyPreserveHost off
+When enabled, this option will pass the Host: line from the incoming request to the proxied host, instead of the hostname specified in the ProxyPass line.
+
+
+ProxyPass /emojis https://api.github.com/
+ProxyPassReverse https://api.github.com/ /emojis
+
+Revers Proxy to https://api.github.com/ 
+
+curl -I http://localhost:8080/emojis
+
+
+ ➜ ~/>⚡ [5:04:21]:>> curl -I http://localhost:8080/emojis
+HTTP/1.1 200 OK
+Date: Sat, 11 Aug 2018 00:04:27 GMT
+Server: GitHub.com
+Content-Type: application/json; charset=utf-8
+Content-Length: 2165
+Status: 200 OK
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 56
+X-RateLimit-Reset: 1533948844
+Cache-Control: public, max-age=60, s-maxage=60
+Vary: Accept,Accept-Encoding
+ETag: "7dc470913f1fe9bb6c7355b50a0737bc"
+X-GitHub-Media-Type: github.v3; format=json
+Access-Control-Expose-Headers: ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'
+X-Runtime-rack: 0.012516
+X-GitHub-Request-Id: C1F1:9D52:15E4A0E:1C8D95D:5B6E280B
+
+
+ProxyPass /transit https://transit.land/api/v1
+
+ProxyPassReverse https://transit.land/api/v1 /transit
+
+Revers Proxy to https://transit.land/api/v1/transit
+
+ ➜ ~/>⚡ [5:04:54]:>> curl -I http://localhost:8080/transit
+HTTP/1.1 200 OK
+Date: Sat, 11 Aug 2018 00:05:01 GMT
+Server: nginx/1.13.9
+Content-Type: application/json; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+ETag: W/"e22570753490d12b750c2c522e2159e7"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: a2b64cf2-18d7-4797-81d8-fb61084c0d3d
+X-Runtime: 0.008248
+Vary: Origin
+
+
+
