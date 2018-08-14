@@ -7,7 +7,7 @@ My solutions of <strong>coding challenge</strong> . Below are the details of the
  <a href="https://asciinema.org/a/EBGQhLscMWUsY5EysiMYRethT">Watch demonstration of Reverse Proxy Set up</a>
  
  
- ![alt aem-devops](blob/master/github_assets/aem-devops.png)
+ ![alt aem-devops](github_assets/aem-devops.png)
  
  </p>
  <p>
