@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="newrelic.core" />
+        <module name="newrelic.it.launcher" />
+        <module name="newrelic.it.tests" />
+        <module name="newrelic.ui.apps" />
+        <module name="newrelic.ui.content" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="newrelic" target="1.6" />
+      <module name="newrelic.core" target="1.6" />
+      <module name="newrelic.it.launcher" target="1.6" />
+      <module name="newrelic.it.tests" target="1.6" />
+      <module name="newrelic.ui.apps" target="1.6" />
+      <module name="newrelic.ui.content" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

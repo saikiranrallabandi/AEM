@@ -1,0 +1,6 @@
+<div data-sly-include="/libs/wcm/core/components/init/init.jsp" data-sly-unwrap/>
+<div data-sly-resource="${@path='par',resourceType='foundation/components/parsys'}" />
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"></sly>
+<sly data-sly-call="${clientlib.css @ categories='newrelic-clientlib'}"/>
+<sly data-sly-call="${clientlib.js @ categories='newrelic-clientlib'}"/>

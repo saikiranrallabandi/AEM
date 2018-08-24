@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:file">
+    <jcr:content
+        dam:folderThumbnailPaths="[/content/dam/beats/8a4d4f3614986347ba124929260e20f9411d24ee.png,/content/dam/beats/81c5f2b84b00879e3f8eeeffd4c0f4d4459f46dc.png,/content/dam/beats/newrelic.png]"
+        jcr:primaryType="nt:unstructured"
+        bgcolor="{Long}-1"
+        height="{Long}140"
+        width="{Long}240"/>
+</jcr:root>

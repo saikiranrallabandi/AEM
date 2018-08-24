@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>newrelic - UI content</comment>
+<entry key="createdBy">saikiranrallabandi</entry>
+<entry key="name">newrelic.ui.content</entry>
+<entry key="created">2018-08-24T09:05:58.362-0700</entry>
+<entry key="groupId">newrelic</entry>
+<entry key="version">1.0-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">newrelic</entry>
+<entry key="description">UI content package for newrelic</entry>
+<entry key="artifactId">newrelic.ui.content</entry>
+<entry key="path">/etc/packages/newrelic/newrelic.ui.content.zip</entry>
+</properties>

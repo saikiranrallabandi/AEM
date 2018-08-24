@@ -1,0 +1,6 @@
+pom/core/listeners/SimpleResourceListener.class
+pom/core/package-info.class
+pom/core/models/HelloWorldModel.class
+pom/core/schedulers/SimpleScheduledTask.class
+pom/core/servlets/SimpleServlet.class
+pom/core/filters/LoggingFilter.class

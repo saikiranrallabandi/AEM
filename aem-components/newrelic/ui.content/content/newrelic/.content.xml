@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2018-08-24T05:57:37.287-07:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/newrelic/templates/newrelicpagetemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="newrelic"
+        sling:resourceType="newrelic/components/page/newrelicpagecomponent">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <marqueel
+                jcr:created="{Date}2018-08-24T05:30:01.168-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-24T05:30:09.846-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="newrelic/components/marqueel"
+                leftpath="/content/dam/newrelic/8a4d4f3614986347ba124929260e20f9411d24ee.png"
+                rightpath="/content/dam/newrelic/81c5f2b84b00879e3f8eeeffd4c0f4d4459f46dc.png"
+                text="Catch problems  before your customers do"/>
+            <productcombinator
+                jcr:created="{Date}2018-08-24T05:30:14.443-07:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2018-08-24T05:57:37.283-07:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="newrelic/components/productcombinator"
+                text="See how New Relic Synthetics works with our other products"
+                text1="[New Relic Synthetics + New Relic Browser]"
+                text2="New Relic Synthetics + New Relic  Infrastructure"
+                text3="New Relic Synthetics + New Relic Mobile"
+                text4="New Relic Synthetics + New Relic Mobile"/>
+        </par>
+    </jcr:content>
+</jcr:root>

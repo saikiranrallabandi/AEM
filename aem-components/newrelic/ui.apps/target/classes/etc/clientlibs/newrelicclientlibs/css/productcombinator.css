@@ -1,0 +1,91 @@
+body, html {
+    height: 77%;
+    margin: 0;
+}
+
+.component-2 {
+	position: relative;
+}
+
+.component-2:after { 
+	background: #000;
+	z-index: 1;
+	content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;	
+}
+
+.bg {
+    /* This image used by combining all the images in one html as newrelic.html and taken a screen shot and included as newrelic.png*/
+    background-image: url("/content/dam/newrelic/newrelic.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+  	display: flex;
+  	top: 0px;
+  	position: absolute;
+  	top: 40%;
+  	width: 100%;
+  	color: white;
+  	opacity: 1;
+  	z-index: 2;
+  	font-family:inherit;
+}
+
+.component-2 .overlay .text-left {
+    display: flex;
+    flex: 0 0 50%;
+  	font-size: 30px;
+}
+
+.component-2 .overlay .text-right {
+    flex: 0 0 50%;
+  	font-size: 25px;
+    text-align:left;
+    
+}
+
+
+.component-2 .overlay .text-left .text {
+	max-width: 50%;
+	margin: auto;
+}
+
+.component-2 .headingImg { 
+	padding-bottom: 30px;
+}
+
+.component-2 .headingImg span {
+	padding-right: 20px;
+}
+
+.component-2 .headingImg span.active img { 
+    border-bottom-style: solid;
+    border: 1px solid rgba(0, 0, 0, 0);;
+    border-bottom-color: rgb(100, 176, 300);
+}
+
+.component-2 .headingImg span img {
+	padding-bottom: 20px;
+	height: 45px;
+}
+
+.hidden{
+  	display: none;
+}
+
+
+.component-2 #textSpinner #tabContent {
+  	display: block;
+}
