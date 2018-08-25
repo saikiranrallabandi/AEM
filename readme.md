@@ -1,5 +1,5 @@
 <p>
-My solutions of <strong>coding challenge</strong> . Below are the details of the assessment
+<strong>Docker Apache Reverse Proxy</strong>
 </p>
 <p>
  1. Devops-like work, Apache Web Servers and Reverse Proxies set up in (aem-devops). Below the recorded session for the Reverse Proxy work and attaching the Reversproxy.txt. 
